@@ -1,0 +1,80 @@
+{
+    "Menus": [
+        {
+            "title": "首页",
+            "home": "1",
+            "path": "/",
+            "icon": "el-icon-star-on"
+        },
+        {
+            "path": "/data",
+            "title": "数据管理",
+            "icon": "el-icon-sort-down",
+            "children": [
+                {
+                    "path": "/users",
+                    "title": "用户列表",
+                    "icon": "el-icon-user-solid"
+                },
+                {
+                    "path": "/seller",
+                    "title": "商家列表",
+                    "icon": "el-icon-user"
+                },
+                {
+                    "path": "/admins",
+                    "title": "管理员列表",
+                    "icon": "el-icon-setting"
+                }
+            ]
+        },
+        {
+            "path": "/chart",
+            "title": "图表",
+            "icon": "el-icon-s-data",
+            "children": [
+                {
+                    "path": "/userschart",
+                    "title": "用户分布",
+                    "icon": "el-icon-user-solid"
+                }
+            ]
+        },
+        {
+            "path": "/edit",
+            "title": "编辑",
+            "icon": "el-icon-edit",
+            "children": [
+                {
+                    "path": "/usersedit",
+                    "title": "富文本编辑",
+                    "icon": "el-icon-document-copy"
+                }
+            ]
+        },
+        {
+            "path": "/setting",
+            "title": "设置",
+            "icon": "el-icon-s-tools",
+            "children": [
+                {
+                    "path": "/userssetting",
+                    "title": "管理员设置",
+                    "icon": "el-icon-user-solid"
+                }
+            ]
+        },
+        {
+            "path": "/info",
+            "title": "说明",
+            "icon": "el-icon-info",
+            "children": [
+                {
+                    "path": "/usersinfo",
+                    "title": "说明",
+                    "icon": "el-icon-user-solid"
+                }
+            ]
+        }
+    ]
+}

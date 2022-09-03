@@ -1,29 +1,63 @@
 import Vue from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-
+import VueRouter from 'vue-router'
+import Home from '../components/Home/Home.vue'
+import Login from '../components/pages/Login.vue'
+import UserList from '../components/pages/UserList.vue'
+import Seller from '../components/pages/Seller.vue'
+import Admins from '../components/pages/Admins.vue'
+import HomeMain from '../components/pages/HomeMain.vue'
 Vue.use(VueRouter)
-
-const routes: Array<RouteConfig> = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
-]
-
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
+    routes: [
+        {
+            path: '/',
+            name: '',
+            component: Home,
+            meta: {
+                requireAuth: true
+            },
+            children: [
+                {
+                    path: '/',
+                    name: 'home',
+                    component: HomeMain,
+                    meta: {
+                        requireAuth: true
+                    },
+                },
+                {
+                    path: '/users',
+                    name: '用户列表',
+                    component: UserList,
+                    meta: {
+                        requireAuth: true
+                    },
+                }, {
+                    path: '/seller',
+                    name: '商家列表',
+                    component: Seller,
+                    meta: {
+                        requireAuth: true
+                    },
+                }, {
+                    path: '/admins',
+                    name: '管理员列表',
+                    component: Admins,
+                    meta: {
+                        requireAuth: true
+                    },
+                }
+            ]
+        }, {
+            path: '/login',
+            name: '登录',
+            component: Login,
+        }, {
+            path: '*',
+            name: '错误',
+            component: () => import('../components/pages/Error404.vue')
+        }
+    ]
 })
-
 export default router
+
