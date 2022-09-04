@@ -23,7 +23,7 @@ import MainR from '../pages/Main.vue'
 export default class Home extends Vue {
     public tableList: any = []
     mounted() {
-        axios.get(`http://localhost:3000/Menus`).then((res: any) => {
+        axios.get(`http://localhost:3009/Menus`).then((res: any) => {
             this.tableList = res.data
             console.log(this.tableList, 'ttt');
         })
