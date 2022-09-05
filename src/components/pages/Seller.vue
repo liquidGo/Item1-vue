@@ -1,13 +1,18 @@
 <template>
     <div>
-        seller
+        <CrumbVue/>
     </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import CrumbVue from './Crumb.vue';
 
-@Component
+@Component({
+    components:{
+        CrumbVue
+    }
+})
 export default class extends Vue {
 
 }

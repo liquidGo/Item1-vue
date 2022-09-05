@@ -12,17 +12,17 @@
             "icon": "el-icon-sort-down",
             "children": [
                 {
-                    "path": "/users",
+                    "path": "/data/users",
                     "title": "用户列表",
                     "icon": "el-icon-user-solid"
                 },
                 {
-                    "path": "/seller",
-                    "title": "商家列表",
+                    "path": "/data/seller",
+                    "title": "商品列表",
                     "icon": "el-icon-user"
                 },
                 {
-                    "path": "/admins",
+                    "path": "/data/admins",
                     "title": "管理员列表",
                     "icon": "el-icon-setting"
                 }
@@ -34,7 +34,7 @@
             "icon": "el-icon-s-data",
             "children": [
                 {
-                    "path": "/userschart",
+                    "path": "/chartuserschart",
                     "title": "用户分布",
                     "icon": "el-icon-user-solid"
                 }
@@ -46,7 +46,7 @@
             "icon": "el-icon-edit",
             "children": [
                 {
-                    "path": "/usersedit",
+                    "path": "/edit/usersedit",
                     "title": "富文本编辑",
                     "icon": "el-icon-document-copy"
                 }
@@ -58,7 +58,7 @@
             "icon": "el-icon-s-tools",
             "children": [
                 {
-                    "path": "/userssetting",
+                    "path": "/setting/userssetting",
                     "title": "管理员设置",
                     "icon": "el-icon-user-solid"
                 }
@@ -70,7 +70,7 @@
             "icon": "el-icon-info",
             "children": [
                 {
-                    "path": "/usersinfo",
+                    "path": "/info/usersinfo",
                     "title": "说明",
                     "icon": "el-icon-user-solid"
                 }
@@ -92,11 +92,61 @@
             "date": "20220904",
             "name": "左岸",
             "pwd": "123"
+        },
+        {
+            "date": "20220903",
+            "name": "左岸",
+            "pwd": "123"
+        },
+        {
+            "date": "20220905",
+            "name": "左岸",
+            "pwd": "123"
+        },
+        {
+            "date": "20220905",
+            "name": "左岸",
+            "pwd": "123"
+        },
+        {
+            "date": "20220905",
+            "name": "左岸",
+            "pwd": "123"
+        },
+        {
+            "date": "20220905",
+            "name": "左岸",
+            "pwd": "123"
+        },
+        {
+            "date": "20220905",
+            "name": "左岸",
+            "pwd": "123"
+        },
+        {
+            "date": "20220905",
+            "name": "左岸",
+            "pwd": "123"
+        },
+        {
+            "date": "20220905",
+            "name": "左岸",
+            "pwd": "123"
+        },
+        {
+            "date": "20220902",
+            "name": "左岸",
+            "pwd": "123"
+        },
+        {
+            "date": "20220905",
+            "name": "左岸",
+            "pwd": "123"
         }
     ],
     "admins": [
         {
-            "date": "20220904",
+            "date": "20220905",
             "name": "左岸",
             "pwd": "123"
         },
@@ -113,7 +163,7 @@
     ],
     "order": [
         {
-            "date": "20220903",
+            "date": "20220905",
             "name": "方便面",
             "info": "香辣牛肉面",
             "score": "4.7"

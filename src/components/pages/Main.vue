@@ -4,7 +4,8 @@
             <span style="font-family:monospace ;" class="title-logo">左岸管理系统</span>
             <el-dropdown>
                 <!-- <i class="el-icon-setting" style="margin-right: 15px"></i> -->
-                <span>欢迎<span style="color:blue;font-weight: bold;"><a href="javascript:;">{{ name }}</a></span>进入管理系统！</span>
+                <span>欢迎<span style="color:blue;font-weight: bold;"><a href="javascript:;">{{ name
+                }}</a></span>进入管理系统！</span>
                 <img src="../../assets/default.jpg" style="position: relative; border-radius:50%;width: 3vw;
     top: 1.4vh;" alt="">
                 <el-dropdown-menu style="margin-top:-15px" slot="dropdown">
@@ -49,7 +50,6 @@ export default class MainR extends Vue {
     }
     mounted() {
         let n = localStorage.getItem('token')
-        console.log(n, 'n');
         this.name = n
     }
 }

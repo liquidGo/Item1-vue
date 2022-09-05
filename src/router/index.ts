@@ -24,29 +24,29 @@ const router = new VueRouter({
                     meta: {
                         requireAuth: true
                     },
-                },
-                {
-                    path: '/users',
+                },    {
+                    path: '/data/users',
                     name: '用户列表',
                     component: UserList,
                     meta: {
                         requireAuth: true
                     },
                 }, {
-                    path: '/seller',
-                    name: '商家列表',
+                    path: '/data/seller',
+                    name: '商品列表',
                     component: Seller,
                     meta: {
                         requireAuth: true
                     },
                 }, {
-                    path: '/admins',
+                    path: '/data/admins',
                     name: '管理员列表',
                     component: Admins,
                     meta: {
                         requireAuth: true
                     },
                 }
+            
             ]
         }, {
             path: '/login',

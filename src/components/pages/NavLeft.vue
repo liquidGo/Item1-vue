@@ -1,11 +1,11 @@
 <template>
     <div>
         <template v-for="(item) in tableList">
-            <el-submenu v-if="item.children" :index="item.title" :key="item.path">
+            <el-submenu  v-if="item.children" :index="item.path" :key="item.path">
                 <template slot="title"><i :class="item.icon"></i>{{ item.title }}</template>
                 <ChildR :tableList="item.children"></ChildR>
             </el-submenu>
-            <el-menu-item :class="{bg:item.path!=='/'}" v-else @click="pathR(item.path)" :index="item.title" :key="item.path + 1">
+            <el-menu-item :class="{bg:item.path!=='/'}" v-else @click="pathR(item.path)" :index="item.path" :key="item.path + 1">
                 <i :class="item.icon"></i>
                 {{ item.title }}
             </el-menu-item>
@@ -70,7 +70,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 export default class extends Vue {
     @Prop() tableList: any
     pathR(a: string) {
-        console.log(this.$router);
+        // console.log(this.$router);
         this.$router.push(a).catch(err => err);
     }
 }
